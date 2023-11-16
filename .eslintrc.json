@@ -1,0 +1,37 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "react-native/react-native": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react-native/all",
+      "plugin:react-hooks/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["react", "react-native", "import", "prettier"],
+    "rules": {
+      "prettier/prettier": "error",
+      "react-native/no-inline-styles": "off",
+      "react-native/no-color-literals": "off",
+      "react/prop-types": "off",
+      "import/no-unresolved": "off",
+      "import/no-extraneous-dependencies": "off"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
